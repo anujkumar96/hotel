@@ -13,7 +13,6 @@ export default function Update() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Fetch hotel details on component mount
   useEffect(() => {
     axios.get(`http://localhost:3001/hotel/${id}`).then((res) => {
       setHotelData(res.data);
@@ -33,13 +32,12 @@ export default function Update() {
     register,
     handleSubmit,
     formState: { errors },
-    reset, // Add reset function to update form values
+    reset, 
   } = useForm();
 
-  // Update the form with fetched hotel data
   useEffect(() => {
     if (hotelData) {
-      reset(hotelData); // Pre-fill the form with hotel data
+      reset(hotelData); 
     }
   }, [hotelData, reset]);
 
@@ -164,7 +162,7 @@ export default function Update() {
             </button>
           </form>
         ) : (
-          <p>Loading...</p> // Display loading message until data is fetched
+          <p>Loading...</p> 
         )}
 
         <Dialog open={open} onClose={handleToClose}>
