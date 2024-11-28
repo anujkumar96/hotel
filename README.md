@@ -4,7 +4,7 @@ After regisration you can login using the regsitered credentials. A logged in us
 Also, new user can subscribe to our newslatter to receive further updates. 
 
 
-### Tech Used : React, Javscript, Axios, Hooks, Tailwind CSS
+### Tech Used : React, Javascript, Axios, Hooks, Tailwind CSS
 
 
 ### Starting FrontEnd
