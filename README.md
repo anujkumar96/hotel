@@ -7,24 +7,7 @@ Also, new user can subscribe to our newslatter to receive further updates.
 ### Tech Used : React, Javascript, Axios, Hooks, Tailwind CSS
 
 
-### Starting FrontEnd
-
- To install depemdencies and related packages
-`npm start`
-
- To run
-`npm start`
-
-This will run the frontend on this url `http://localhost:3000`, open to view it in your browser.
-
-
-### Starting Backend
-
- To install JSON-SERVER globally
-`npm install -g json-server`
-
- To run the JSON file, in the root directory of hotel.json file in assets folder, run
-`json-server --watch hotel.json --port 3001`
-
-
-This will run the backend on this url `http://localhost:3001`, open to view it in your browser.
+#### Staring the whole application (FrontEnd+Backend)
+## =>    "npm start"
+Backend will run on port 3001 by default and front end on Port 3000
+Copy and paste this in web browser http://localhost:3000/ 

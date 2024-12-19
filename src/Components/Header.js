@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
+  console.log("props",props);
   const clearStorage = () => {
     localStorage.clear();
     // navigate("/");
@@ -23,6 +24,11 @@ export default function Header(props) {
           <Link to="/aboutus">
       <span  className="text-xl border-lime-600 text-left">About Us</span>
           </Link>
+          {props.data &&
+<Link to="/user">
+      <span  className="text-xl border-lime-600 text-left">Hotels</span>
+          </Link>
+          }
       </div>
       </div>
 
